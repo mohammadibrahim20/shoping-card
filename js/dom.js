@@ -62,6 +62,9 @@ document.getElementById("btn-Apply").addEventListener('click', function(){
         
         setTextElementValueById("total-final", addSumShipingCost);
     }
+    else(
+        alert('invalid promo Code')
+    )
     
    
 })
