@@ -24,15 +24,14 @@
 
 function decrement(countItems){
     const inputFielddata = getInputFieldValueById(countItems);
-    const inputdataPlus = inputFielddata- 1;
+    const inputdataPlus = inputFielddata - 1;
     
     setInputFieldValueById(countItems, inputdataPlus);
-    
-    // set price
+     
     
 }
 
-function encrement(countItems, perPrice, totalPrice){
+function encrement(countItems, perPrice, totalPrice, totalAmount){
     const inputFielddata = getInputFieldValueById(countItems);
     const inputdataPlus = inputFielddata + 1;
     
@@ -44,7 +43,28 @@ function encrement(countItems, perPrice, totalPrice){
 
     setTextElementValueById(totalPrice, totalPriceOfMobile);
 
+   const totalAmountNumber = getTextElementValueByid(totalAmount);
+   const total = totalAmountNumber + priceOfMobile;
+   setTextElementValueById(totalAmount, total);
+
 }
+
+document.getElementById("btn-Apply").addEventListener('click', function(){
+    const promo = document.getElementById('promo-code');
+    const promoString = promo.value;
+    const shipingCost = 10;
+
+    if(promoString == 'discount'){
+        const total = getTextElementValueByid('total-amount');
+        const sum = total * 0.1;
+        const sumMinusDiscount = total- sum;
+        const addSumShipingCost = sumMinusDiscount + shipingCost;
+        
+        setTextElementValueById("total-final", addSumShipingCost);
+    }
+    
+   
+})
 
 
 

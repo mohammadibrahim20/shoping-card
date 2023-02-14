@@ -13,8 +13,8 @@
 
 <body class="bg-gray-100">
   <div class="container mx-auto mt-10">
-    <div class="flex shadow-md my-10">
-      <div class="w-3/4 bg-white px-10 py-10">
+    <div class="md:flex shadow-md my-10">
+      <div class="md:w-3/4 bg-white px-2 md:px-10 py-10">
         <div class="flex justify-between border-b pb-8">
           <h1 class="font-semibold text-2xl">Shopping Cart</h1>
           <h2 class="font-semibold text-2xl">3 Items</h2>
@@ -29,7 +29,7 @@
         <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
           <div class="flex w-2/5">
             <div class="w-20">
-              <img class="h-24" src="image/iphone.jfif" alt="">
+              <img class="h-20" src="image/iphone.jfif" alt="">
             </div>
             <div class="flex flex-col justify-between ml-4 flex-grow">
               <span class="font-bold text-sm">Iphone 6S</span>
@@ -45,9 +45,9 @@
               </svg>
             </button>
 
-            <input id="count-items" class="mx-2 border text-center w-8" type="text" value="1">
+            <input id="count-items" class="mx-2 border text-center w-8" type="text" value="0">
 
-            <button onclick="encrement('count-items', 'per-price', 'total-price')" class="hover:bg-green-200">
+            <button onclick="encrement('count-items', 'per-price', 'total-price', 'total-amount')" class="hover:bg-green-200">
               <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
                 <path
                   d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
@@ -55,7 +55,7 @@
             </button>
           </div>
           <p class="text-center w-1/5 font-semibold text-sm">$<span id="per-price">400.00</span></p>
-          <p class="text-center w-1/5 font-semibold text-sm">$<span id="total-price">400.00</span></p>
+          <p class="text-center w-1/5 font-semibold text-sm">$<span id="total-price">00</span></p>
         </div> 
         <!-- items1 end -->
         <!-- items 2 -->
@@ -63,7 +63,7 @@
           <div class="flex w-2/5">
              <!-- product -->
             <div class="w-20">
-              <img class="h-24" src="image/Samsung.jpg" alt="">
+              <img class="h-20" src="image/Samsung.jpg" alt="">
             </div>
             <div class="flex flex-col justify-between ml-4 flex-grow">
               <span class="font-bold text-sm">Samsung S23 Ultra</span>
@@ -80,9 +80,9 @@
               </svg>
             </button>
 
-            <input id="count-items3" class="mx-2 border text-center count-items w-8" type="text" value="1">
+            <input id="count-items3" class="mx-2 border text-center count-items w-8" type="text" value="0">
 
-            <button onclick="encrement('count-items3', 'per-price3', 'total-price3')"
+            <button onclick="encrement('count-items3', 'per-price3', 'total-price3', 'total-amount')"
               class="hover:bg-green-200 add-btn">
               <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
                 <path
@@ -90,8 +90,8 @@
               </svg>
             </button>
           </div>
-          <p class="text-center w-1/5 font-semibold text-sm">$<span id="per-price3">200.00</span></p>
-          <p class="text-center w-1/5 font-semibold text-sm">$<span id="total-price3">200.00</span></p>
+          <p class="text-center w-1/5 font-semibold text-sm">$<span id="per-price3">500.00</span></p>
+          <p class="text-center w-1/5 font-semibold text-sm">$<span id="total-price3">00</span></p>
 
           <!-- price Bottom -->
         </div>
@@ -100,7 +100,7 @@
           <div class="flex w-2/5"> 
             <!-- product -->
             <div class="w-20">
-              <img class="h-24" src="image/Xiaomi.jpg" alt="">
+              <img class="h-20" src="image/Xiaomi.jpg" alt="">
             </div>
             <div class="flex flex-col justify-between ml-4 flex-grow">
               <span class="font-bold text-sm">Xiaomi Note 11 Pro</span>
@@ -116,9 +116,9 @@
               </svg>
             </button>
 
-            <input id="count-items5" class="mx-2 border text-center count-items w-8" type="text" value="1">
+            <input id="count-items5" class="mx-2 border text-center count-items w-8" type="text" value="0">
 
-            <button onclick="encrement('count-items5', 'per-price5', 'total-price5')"
+            <button onclick="encrement('count-items5', 'per-price5', 'total-price5', 'total-amount')"
               class="hover:bg-green-200 add-btn">
               <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
                 <path
@@ -126,8 +126,8 @@
               </svg>
             </button>
           </div>
-          <p class="text-center w-1/5 font-semibold text-sm">$<span id="per-price5">500.00</span></p>
-          <p class="text-center w-1/5 font-semibold text-sm">$<span id="total-price5">500.00</span></p>
+          <p class="text-center w-1/5 font-semibold text-sm">$<span id="per-price5">350.00</span></p>
+          <p class="text-center w-1/5 font-semibold text-sm">$<span id="total-price5">00</span></p>
         </div>
       </div>
 
@@ -139,7 +139,7 @@
 
       
     <!-- end -->
-    <div id="summary" class="w-1/4 px-8 py-10">
+    <div id="summary" class="md:w-1/4 px-8 py-10">
       <!-- bejal -->
       <a href="#" class="flex font-semibold text-indigo-600 text-sm mt-10">
 
@@ -154,23 +154,23 @@
       <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
       <div class="flex justify-between mt-10 mb-5">
         <span class="font-semibold text-sm uppercase">Items 3</span>
-        <span class="font-semibold text-sm">$ <span id="total-amount">590</span></span>
+        <span class="font-semibold text-sm">$ <span id="total-amount">00</span></span>
       </div>
       <div>
         <label class="font-medium inline-block mb-3 text-sm uppercase">Shipping</label>
         <select class="block p-2 text-gray-600 w-full text-sm">
-          <option>Standard shipping - $10.00</option>
+          <option>Standard shipping - $ <span id="shiping-cost">10.00</span></option>
         </select>
       </div>
       <div class="py-10">
-        <label for="promo" class="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
-        <input type="text" id="promo" placeholder="Enter your code" class="p-2 text-sm w-full">
+        <label for="promo" id="promo" class="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
+        <input type="text" id="promo-code" placeholder="Enter your code" class="p-2 text-sm w-full">
       </div>
-      <button class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">Apply</button>
+      <button id="btn-Apply" class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">Apply</button>
       <div class="border-t mt-8">
         <div class="flex font-semibold justify-between py-6 text-sm uppercase">
-          <span>Total cost</span>
-          <span>$600</span>
+          <p>Total cost</p>
+          <p>$ <span id="total-final">00</span></p>
         </div>
         <button
           class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
